@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="zh-tw" http-equiv="Content-Language">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>古希臘文轉換拉丁拼音</title>
+	<script>
+		function showText() {
+			var inputText = document.getElementById("inputText").value;
+			var outputText0 =inputText; 
+			var outputText = ""; 
+			for (var i = 0; i < inputText.length; i++) {
+				if (inputText.charAt(i) === "Α"||inputText.charAt(i) === "α"||inputText.charAt(i) === "Ά"||inputText.charAt(i) === "Ὰ"||inputText.charAt(i) === "Ἀ"||inputText.charAt(i) === "Ἁ"||inputText.charAt(i) === "Ἄ"
+				||inputText.charAt(i) === "Ἂ"||inputText.charAt(i) === "Ἆ"||inputText.charAt(i) === "Ἅ"||inputText.charAt(i) === "Ἃ"||inputText.charAt(i) === "Ἇ"||inputText.charAt(i) === "ά"||inputText.charAt(i) === "ὰ"
+				||inputText.charAt(i) === "ᾶ"||inputText.charAt(i) === "ἀ"||inputText.charAt(i) === "ἁ"||inputText.charAt(i) === "ἄ"||inputText.charAt(i) === "ἂ"||inputText.charAt(i) === "ἆ"||inputText.charAt(i) === "ἅ"||inputText.charAt(i) === "ἃ"||inputText.charAt(i) === "ἇ"
+				||inputText.charAt(i) === "ᾼ"||inputText.charAt(i) === "ᾈ"||inputText.charAt(i) === "ᾉ"||inputText.charAt(i) === "ᾌ"||inputText.charAt(i) === "ᾊ"||inputText.charAt(i) === "ᾎ"||inputText.charAt(i) === "ᾍ"||inputText.charAt(i) === "ᾋ"||inputText.charAt(i) === "ᾏ"
+				||inputText.charAt(i) === "ᾳ"||inputText.charAt(i) === "ᾴ"||inputText.charAt(i) === "ᾲ"||inputText.charAt(i) === "ᾷ"||inputText.charAt(i) === "ᾀ"||inputText.charAt(i) === "ᾁ"||inputText.charAt(i) === "ᾄ"||inputText.charAt(i) === "ᾂ"||inputText.charAt(i) === "ᾆ"||inputText.charAt(i) === "ᾅ"||inputText.charAt(i) === "ᾃ"||inputText.charAt(i) === "ᾇ") {
+					outputText += "a"; 
+				} else if (inputText.charAt(i) === "Β"||inputText.charAt(i) === "β") {
+					outputText += "b"; 
+				} else if (inputText.charAt(i) === "Γ"||inputText.charAt(i) === "γ") {
+					outputText += "g"; 
+				} else if (inputText.charAt(i) === "Δ"||inputText.charAt(i) === "δ") {
+					outputText += "d"; 
+				} else if (inputText.charAt(i) === "Ε"||inputText.charAt(i) === "ε"||inputText.charAt(i) === "Έ"||inputText.charAt(i) === "Ὲ"||inputText.charAt(i) === "Ἐ"||inputText.charAt(i) === "Ἑ"||inputText.charAt(i) === "Ἔ"||inputText.charAt(i) === "Ἒ"||inputText.charAt(i) === "Ἕ"||inputText.charAt(i) === "Ἓ"
+				||inputText.charAt(i) === "έ"||inputText.charAt(i) === "ὲ"||inputText.charAt(i) === "ἐ"||inputText.charAt(i) === "ἑ"||inputText.charAt(i) === "ἔ"||inputText.charAt(i) === "ἒ"||inputText.charAt(i) === "ἕ"||inputText.charAt(i) === "ἓ") {
+					outputText += "e"; 
+				} else if (inputText.charAt(i) === "Ζ"||inputText.charAt(i) === "ζ") {
+					outputText += "z(dz)"; 
+				} else if (inputText.charAt(i) === "Η"||inputText.charAt(i) === "η"||inputText.charAt(i) === "Ή"||inputText.charAt(i) === "Ὴ"||inputText.charAt(i) === "Ἠ"||inputText.charAt(i) === "Ἡ"||inputText.charAt(i) === "Ἤ"||inputText.charAt(i) === "Ἢ"||inputText.charAt(i) === "Ἦ"||inputText.charAt(i) === "Ἥ"||inputText.charAt(i) === "Ἣ"||inputText.charAt(i) === "Ἧ"
+				||inputText.charAt(i) === "ή"||inputText.charAt(i) === "ὴ"||inputText.charAt(i) === "ῆ"||inputText.charAt(i) === "ἠ"||inputText.charAt(i) === "ἡ"||inputText.charAt(i) === "ἤ"||inputText.charAt(i) === "ἢ"||inputText.charAt(i) === "ἦ"||inputText.charAt(i) === "ἥ"||inputText.charAt(i) === "ἣ"||inputText.charAt(i) === "ἧ"
+				||inputText.charAt(i) === "ῃ"||inputText.charAt(i) === "ῄ"||inputText.charAt(i) === "ῂ"||inputText.charAt(i) === "ῇ"||inputText.charAt(i) === "ᾐ"||inputText.charAt(i) === "ᾑ"||inputText.charAt(i) === "ᾔ"||inputText.charAt(i) === "ᾒ"||inputText.charAt(i) === "ᾖ"||inputText.charAt(i) === "ᾕ"||inputText.charAt(i) === "ᾓ"||inputText.charAt(i) === "ᾗ") {
+					outputText += "ē(e)"; 
+				} else if (inputText.charAt(i) === "Θ"||inputText.charAt(i) === "θ") {
+					outputText += "th"; 
+				} else if (inputText.charAt(i) === "Ι"||inputText.charAt(i) === "ι"||inputText.charAt(i) === "Ί"||inputText.charAt(i) === "Ὶ"||inputText.charAt(i) === "Ἰ"||inputText.charAt(i) === "Ἱ"||inputText.charAt(i) === "Ἴ"||inputText.charAt(i) === "Ἲ"||inputText.charAt(i) === "Ἶ"||inputText.charAt(i) === "Ἵ"||inputText.charAt(i) === "Ἳ"||inputText.charAt(i) === "Ἷ"
+				||inputText.charAt(i) === "ί"||inputText.charAt(i) === "ὶ"||inputText.charAt(i) === "ῖ"||inputText.charAt(i) === "ἰ"||inputText.charAt(i) === "ἱ"||inputText.charAt(i) === "ἴ"||inputText.charAt(i) === "ἲ"||inputText.charAt(i) === "ἶ"||inputText.charAt(i) === "ἵ"||inputText.charAt(i) === "Ἷ"||inputText.charAt(i) === "ἳ"||inputText.charAt(i) === "ἷ") {
+					outputText += "i"; 
+				} else if (inputText.charAt(i) === "Κ"||inputText.charAt(i) === "κ") {
+					outputText += "k"; 
+				} else if (inputText.charAt(i) === "Λ"||inputText.charAt(i) === "λ") {
+					outputText += "l"; 
+				} else if (inputText.charAt(i) === "Μ"||inputText.charAt(i) === "μ") {
+					outputText += "m"; 
+				} else if (inputText.charAt(i) === "Ν"||inputText.charAt(i) === "ν") {
+					outputText += "n"; 
+				} else if (inputText.charAt(i) === "Ξ"||inputText.charAt(i) === "ξ") {
+					outputText += "ks"; 
+				} else if (inputText.charAt(i) === "Ο"||inputText.charAt(i) === "ο"||inputText.charAt(i) === "Ό"||inputText.charAt(i) === "Ὸ"||inputText.charAt(i) === "Ὀ"||inputText.charAt(i) === "Ὁ"||inputText.charAt(i) === "Ὄ"||inputText.charAt(i) === "Ὂ"||inputText.charAt(i) === "Ὅ"||inputText.charAt(i) === "Ὃ"
+				||inputText.charAt(i) === "ό"||inputText.charAt(i) === "ὸ"||inputText.charAt(i) === "ὀ"||inputText.charAt(i) === "ὁ"||inputText.charAt(i) === "ὄ"||inputText.charAt(i) === "ὂ"||inputText.charAt(i) === "ὅ"||inputText.charAt(i) === "ὃ") {
+					outputText += "o"; 
+				} else if (inputText.charAt(i) === "Π"||inputText.charAt(i) === "π") {
+					outputText += "p"; 
+				} else if (inputText.charAt(i) === "Ρ"||inputText.charAt(i) === "ρ"||inputText.charAt(i) === "Ῥ"||inputText.charAt(i) === "ῤ") {
+					outputText += "r"; 
+				} else if (inputText.charAt(i) === "ῥ") {
+					outputText += "rh";
+				} else if (inputText.charAt(i) === "Σ"||inputText.charAt(i) === "σ"||inputText.charAt(i) === "ς") {
+					outputText += "s"; 
+				} else if (inputText.charAt(i) === "Τ"||inputText.charAt(i) === "τ") {
+					outputText += "t"; 
+				} else if (inputText.charAt(i) === "Υ"||inputText.charAt(i) === "υ"||inputText.charAt(i) === "Ύ"||inputText.charAt(i) === "Ὺ"||inputText.charAt(i) === "Ὑ"||inputText.charAt(i) === "Ὕ"||inputText.charAt(i) === "Ὓ"||inputText.charAt(i) === "Ὗ"
+				||inputText.charAt(i) === "ύ"||inputText.charAt(i) === "ὺ"||inputText.charAt(i) === "ῦ"||inputText.charAt(i) === "ὐ"||inputText.charAt(i) === "ὑ"||inputText.charAt(i) === "ὔ"||inputText.charAt(i) === "ὒ"||inputText.charAt(i) === "ὖ"||inputText.charAt(i) === "ὕ"||inputText.charAt(i) === "ὓ"||inputText.charAt(i) === "ὗ") {
+					outputText += "y(u)";
+				} else if (inputText.charAt(i) === "Φ"||inputText.charAt(i) === "φ") {
+					outputText += "ph"; 
+				} else if (inputText.charAt(i) === "Χ"||inputText.charAt(i) === "χ") {
+					outputText += "ch"; 
+				} else if (inputText.charAt(i) === "Ψ"||inputText.charAt(i) === "ψ") {
+					outputText += "ps"; 
+				} else if (inputText.charAt(i) === "Ω"||inputText.charAt(i) === "ω"||inputText.charAt(i) === "Ώ"||inputText.charAt(i) === "Ὼ"||inputText.charAt(i) === "Ὠ"||inputText.charAt(i) === "Ὡ"||inputText.charAt(i) === "Ὤ"||inputText.charAt(i) === "Ὢ"||inputText.charAt(i) === "Ὦ"||inputText.charAt(i) === "Ὥ"||inputText.charAt(i) === "Ὣ"||inputText.charAt(i) === "Ὧ"
+				||inputText.charAt(i) === "ῼ"||inputText.charAt(i) === "ᾨ"||inputText.charAt(i) === "ᾩ"||inputText.charAt(i) === "ᾬ"||inputText.charAt(i) === "ᾪ"||inputText.charAt(i) === "ᾮ"||inputText.charAt(i) === "ᾭ"||inputText.charAt(i) === "ᾫ"||inputText.charAt(i) === "ᾯ"
+				||inputText.charAt(i) === "ώ"||inputText.charAt(i) === "ὼ"||inputText.charAt(i) === "ῶ"||inputText.charAt(i) === "ὠ"||inputText.charAt(i) === "ὡ"||inputText.charAt(i) === "ὤ"||inputText.charAt(i) === "ὢ"||inputText.charAt(i) === "ὦ"||inputText.charAt(i) === "ὥ"||inputText.charAt(i) === "ὣ"||inputText.charAt(i) === "ὧ"
+				||inputText.charAt(i) === "ῳ"||inputText.charAt(i) === "ῴ"||inputText.charAt(i) === "ῲ"||inputText.charAt(i) === "ῷ"||inputText.charAt(i) === "ᾠ"||inputText.charAt(i) === "ᾡ"||inputText.charAt(i) === "ᾤ"||inputText.charAt(i) === "ᾢ"||inputText.charAt(i) === "ᾦ"||inputText.charAt(i) === "ᾥ"||inputText.charAt(i) === "ᾣ"||inputText.charAt(i) === "ᾧ") {
+					outputText += "ō(o)"; 
+				} 
+
+				else {
+					outputText += inputText.charAt(i); 
+				}
+			}
+			document.getElementById("displayText0").innerHTML = outputText0;
+			document.getElementById("displayText").innerHTML = outputText;
+			document.getElementById("inputText").value = ""; 
+		}
+		function playAudio() {
+		  var paragraph = document.getElementById("displayText0").innerText;
+		  var speech = new SpeechSynthesisUtterance(paragraph);
+		  speech.rate = 0.8;
+		  speech.lang = "el";
+		  window.speechSynthesis.speak(speech);
+		}
+
+	</script>
+</head>
+
+<body>
+
+<h1>古希臘文轉換拉丁拼音</h1>
+<p>&nbsp;</p>
+
+<INPUT TYPE=TEXT NAME=古希臘文輸入 placeholder="請輸入古希臘文" onfocus="this.placeholder=''"  onblur="this.placeholder='請輸入古希臘文'" SIZE="30" id="inputText">
+<button onclick="showText()">轉換</button>
+<p></p>
+<hr>
+<h3>原文：</h3>
+<p id="displayText0"></p>
+<button onclick="playAudio()">朗讀希臘文(請用Microsoft Edge瀏覽器)</button>
+<p></p>
+<hr>
+<h3>結果：</h3>
+
+<p id="displayText"></p>
+</body>
+
+</html>
